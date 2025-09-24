@@ -56,7 +56,7 @@ struct ProductsScreen: View {
                     .progressViewStyle(.circular)
             }
             .navigationDestination(isPresented: $viewModel.goToProductList) {
-                ListProductsScreen(productListSelected: viewModel.productSelected)
+                ListProductsScreen(productListSelected: $viewModel.productSelected)
             }
         }
     }

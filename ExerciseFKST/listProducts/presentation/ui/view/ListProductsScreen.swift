@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ListProductsScreen: View {
     @StateObject private var viewModelListProduct: ListProductViewModel = ListProductViewModel()
-    @State internal var productListSelected: [ProductsResponse]
+    @Binding var productListSelected: [ProductsResponse]
 
     var body: some View {
         NavigationStack {
